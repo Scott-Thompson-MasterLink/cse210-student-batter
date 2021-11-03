@@ -40,3 +40,5 @@ root                    (project root folder)
 ## Authors
 ---
 * # TODO: Add your names and emails here
+
+Nathan Muller - nmuller005@gmail.com
