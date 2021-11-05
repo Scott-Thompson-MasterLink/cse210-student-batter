@@ -29,7 +29,7 @@ def main(screen):
         for y in range(2, 6):
             position = Point(x, y)
             brick = Actor()
-            brick.set_text("*")
+            brick.set_text("▪")
             brick.set_position(position)
             cast["brick"].append(brick)
 
