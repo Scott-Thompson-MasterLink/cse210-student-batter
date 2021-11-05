@@ -67,12 +67,19 @@ class Point:
         """
         return self._x == 0 and self._y == 0
         
-    def reverse(self):
-        """Gets a new Point that is the reverse of this one.
+    def reverse(self, x_axis = False):
+        """Gets a new Point that is the reverse of chosen axis.
         
         Returns:
-            Point: A new Point that is reversed.
+            Point: A new Point that is reversed on chosen axis.
         """
-        x = self._x * -1
-        y = self._y * -1
-        return Point(x, y)
+        if not x_axis:
+            x = self._x 
+            y = self._y * -1
+            return Point(x, y)
+        elif x_axis:
+            x = self._x * -1
+            y = self._y 
+            return Point(x, y)
+
+        

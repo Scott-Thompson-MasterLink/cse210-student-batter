@@ -17,10 +17,10 @@ def main(screen):
     cast = {}
 
     x = int(constants.MAX_X / 2)
-    y = int(constants.MAX_Y - 1)
+    y = int(constants.MAX_Y - 2)
     position = Point(x, y)
     paddle = Actor()
-    paddle.set_text("===========")
+    paddle.set_text("▫▫▫▫▫▫▫▫▫▫▫")
     paddle.set_position(position)
     cast["paddle"] = [paddle]
 
@@ -38,7 +38,7 @@ def main(screen):
     position = Point(x, y)
     velocity = Point(1, -1)
     ball = Actor()
-    ball.set_text("@")
+    ball.set_text("⚽")
     ball.set_position(position)
     ball.set_velocity(velocity)
     cast["ball"] = [ball]
